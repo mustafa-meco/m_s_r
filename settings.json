@@ -1,0 +1,29 @@
+{
+  "networking": {
+    "main_cu": "192.168.120.170",
+    "raspi": "192.168.120.224"
+  },
+  "ros": {
+    "msg_queue_size": 10,
+    "nodes": {
+      "main_cu": ["joystick_node"],
+      "raspi": ["serial_interface_node", "camera_adapter_node"]
+    },
+    "ignore_machines": [],
+    "ignore_nodes": []
+  },
+  "system": {
+    "debug": true,
+    "allowed_log_levels": ["ERROR", "INFO", "DEBUG"]
+  },
+  "security": {
+    "main_cu": {
+      "username": "Mustafa-Ghoneim",
+      "password": "1234"
+    },
+    "raspi": {
+      "username": "pi",
+      "password": "1234"
+    }
+  }
+}
